@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+ <head>
+  <title>this</title>
+ <head>
+  <body>
+  <h1>Значение отсутствует</h1>
+  <form action="." method="get">
+  	{{ form.non_field_errors }}
+   <p style="color: red;">Сегмент A</p>
+  	<div class="fieldWrapper">
+       Значение отсутствует: {{ form.segmentA1 }} {{ form.segmentA1.help_text }} {{ form.segmentA1.errors.as_text }}  </p>
+    </div>
+	<div class="fieldWrapper">
+        Значение отсутствует: {{ form.versionA1 }} {{ form.versionA1.help_text }} {{ form.versionA1.errors.as_text }} </p>
+    </div>
+       <p style="color: red;">Сегмент B</p>
+  	<div class="fieldWrapper">
+       Значение отсутствует: {{ form.segmentB1 }} {{ form.segmentB1.help_text }} {{ form.segmentB1.errors.as_text }}  </p>
+    </div>
+	<div class="fieldWrapper">
+        Значение отсутствует: {{ form.versionB1 }} {{ form.versionB1.help_text }} {{ form.versionB1.errors.as_text }} </p>
+    </div>
+   <input type="submit" value="Форматировать" />
+  </form>
+ </body>
+</html>
